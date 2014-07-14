@@ -3,7 +3,7 @@
    $BASE-TIME-PICKER
    ========================================================================== */
 
-@import "_variables";
+@import "variables";
 
 
 /**
@@ -35,26 +35,26 @@
 
 /* Hovered time */
 .picker__list-item:hover {
-    @extend .picker-item-hovered;
+    @extend %picker-item-hovered;
     border-color: $blue;
     z-index: 10;
 }
 
 /* Highlighted and hovered/focused time */
 .picker__list-item--highlighted {
-    @extend .picker-item-highlighted;
+    @extend %picker-item-highlighted;
     z-index: 10;
 }
 .picker__list-item--highlighted:hover,
 .picker--focused .picker__list-item--highlighted {
-    @extend .picker-item-hovered;
+    @extend %picker-item-hovered;
 }
 
 /* Selected and hovered/focused time */
 .picker__list-item--selected,
 .picker__list-item--selected:hover,
 .picker--focused .picker__list-item--selected {
-    @extend .picker-item-selected;
+    @extend %picker-item-selected;
     z-index: 10;
 }
 
@@ -62,7 +62,7 @@
 .picker__list-item--disabled,
 .picker__list-item--disabled:hover,
 .picker--focused .picker__list-item--disabled {
-    @extend .picker-item-disabled;
+    @extend %picker-item-disabled;
     border-color: $border-grey-light;
     z-index: auto;
 }
@@ -93,7 +93,7 @@
 
     .picker__button--clear:hover,
     .picker__button--clear:focus {
-        @extend .picker-item-hovered;
+        @extend %picker-item-hovered;
         background: $clear-red;
         border-color: $clear-red;
         cursor: pointer;

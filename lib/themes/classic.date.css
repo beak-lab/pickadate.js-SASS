@@ -1,11 +1,11 @@
 /* ==========================================================================
    $BASE-DATE-PICKER
    ========================================================================== */
-.picker-item-highlighted, .picker__day--highlighted {
+.picker__day--highlighted {
   border-color: #0089ec;
 }
 
-.picker-item-hovered, .picker__nav--prev:hover,
+.picker__nav--prev:hover,
 .picker__nav--next:hover, .picker__day--infocus:hover,
 .picker__day--outfocus:hover, .picker__day--highlighted:hover,
 .picker--focused .picker__day--highlighted, .picker__button--today:hover,
@@ -16,14 +16,14 @@
   background: #b1dcfb;
 }
 
-.picker-item-selected, .picker__day--selected,
+.picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
   background: #0089ec;
   color: white;
 }
 
-.picker-item-disabled, .picker__day--disabled,
+.picker__day--disabled,
 .picker__day--disabled:hover,
 .picker--focused .picker__day--disabled, .picker__button--today[disabled],
 .picker__button--today[disabled]:hover {
@@ -313,4 +313,39 @@
 
 .picker__button--today[disabled]:before {
   border-top-color: #aaaaaa;
+}
+
+/* ==========================================================================
+   $CLASSIC-DATE-PICKER
+   ========================================================================== */
+.picker__day--highlighted {
+  border-color: #0089ec;
+}
+
+.picker__nav--prev:hover,
+.picker__nav--next:hover, .picker__day--infocus:hover,
+.picker__day--outfocus:hover, .picker__day--highlighted:hover,
+.picker--focused .picker__day--highlighted, .picker__button--today:hover,
+.picker__button--clear:hover,
+.picker__button--close:hover {
+  cursor: pointer;
+  color: black;
+  background: #b1dcfb;
+}
+
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+  background: #0089ec;
+  color: white;
+}
+
+.picker__day--disabled,
+.picker__day--disabled:hover,
+.picker--focused .picker__day--disabled, .picker__button--today[disabled],
+.picker__button--today[disabled]:hover {
+  background: whitesmoke;
+  border-color: whitesmoke;
+  color: #dddddd;
+  cursor: default;
 }

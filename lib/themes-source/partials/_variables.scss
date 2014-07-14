@@ -128,25 +128,25 @@ $classic-box-shadow: 0 6px 18px 1px rgba(0,0,0,.12) !default;
 //
 
 // Highlighted.
-.picker-item-highlighted{
+%picker-item-highlighted{
     border-color: $blue;
 }
 
 // Hovered.
-.picker-item-hovered{
+%picker-item-hovered{
     cursor: pointer;
     color: $black;
     background: $blue-hover;
 }
 
 // Selected.
-.picker-item-selected{
+%picker-item-selected{
     background: $blue;
     color: $white;
 }
 
 // Disabled.
-.picker-item-disabled{
+%picker-item-disabled{
     background: $disabled-things-bg;
     border-color: $disabled-things-bg;
     color: $disabled-things-text;
@@ -171,32 +171,32 @@ $classic-box-shadow: 0 6px 18px 1px rgba(0,0,0,.12) !default;
 //
 // Vendor prefixes
 //
-@mixin box-shadow ( $arguments ) {
+@mixin box-shadow ( $arguments... ) {
     -webkit-box-shadow: $arguments;
        -moz-box-shadow: $arguments;
             box-shadow: $arguments;
 }
-@mixin box-sizing ( $arguments ) {
+@mixin box-sizing ( $arguments... ) {
     -webkit-box-sizing: $arguments;
        -moz-box-sizing: $arguments;
             box-sizing: $arguments;
 }
-@mixin border-radius ( $arguments ) {
+@mixin border-radius ( $arguments... ) {
     -webkit-border-radius: $arguments;
        -moz-border-radius: $arguments;
             border-radius: $arguments;
 }
-@mixin transition ( $arguments ) {
+@mixin transition ( $arguments... ) {
     -webkit-transition: $arguments;
        -moz-transition: $arguments;
             transition: $arguments;
 }
-@mixin transform ( $arguments ) {
+@mixin transform ( $arguments... ) {
     -webkit-transform: $arguments;
        -moz-transform: $arguments;
             transform: $arguments;
 }
-@mixin user-select ( $arguments ) {
+@mixin user-select ( $arguments... ) {
     -webkit-user-select: $arguments;
        -moz-user-select: $arguments;
         -ms-user-select: $arguments;

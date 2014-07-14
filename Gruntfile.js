@@ -109,12 +109,12 @@ module.exports = function( grunt ) {
             },
             themes: {
                 files: {
-                    '<%= dirs.themes.dest %>/default.css': [ '<%= dirs.themes.src %>/base.scss', '<%= dirs.themes.src %>/default.scss' ],
-                    '<%= dirs.themes.dest %>/classic.css': [ '<%= dirs.themes.src %>/base.scss', '<%= dirs.themes.src %>/classic.scss' ],
-                    '<%= dirs.themes.dest %>/default.date.css': [ '<%= dirs.themes.src %>/base.date.scss', '<%= dirs.themes.src %>/default.date.scss' ],
-                    '<%= dirs.themes.dest %>/default.time.css': [ '<%= dirs.themes.src %>/base.time.scss', '<%= dirs.themes.src %>/default.time.scss' ],
-                    '<%= dirs.themes.dest %>/classic.date.css': [ '<%= dirs.themes.src %>/base.date.scss', '<%= dirs.themes.src %>/classic.date.scss' ],
-                    '<%= dirs.themes.dest %>/classic.time.css': [ '<%= dirs.themes.src %>/base.time.scss', '<%= dirs.themes.src %>/classic.time.scss' ],
+                    '<%= dirs.themes.dest %>/default.css': '<%= dirs.themes.src %>/default.scss',
+                    '<%= dirs.themes.dest %>/classic.css': '<%= dirs.themes.src %>/classic.scss',
+                    '<%= dirs.themes.dest %>/default.date.css': '<%= dirs.themes.src %>/default.date.scss',
+                    '<%= dirs.themes.dest %>/default.time.css': '<%= dirs.themes.src %>/default.time.scss',
+                    '<%= dirs.themes.dest %>/classic.date.css':' <%= dirs.themes.src %>/classic.date.scss' ,
+                    '<%= dirs.themes.dest %>/classic.time.css': '<%= dirs.themes.src %>/classic.time.scss',
                     '<%= dirs.themes.dest %>/rtl.css': [ '<%= dirs.themes.src %>/rtl.scss' ]
                 }
             }

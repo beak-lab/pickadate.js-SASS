@@ -1,11 +1,12 @@
+@charset "CP850";
 /* ==========================================================================
    $BASE-TIME-PICKER
    ========================================================================== */
-.picker-item-highlighted, .picker__list-item--highlighted {
+.picker__list-item--highlighted {
   border-color: #0089ec;
 }
 
-.picker-item-hovered, .picker__list-item:hover, .picker__list-item--highlighted:hover,
+.picker__list-item:hover, .picker__list-item--highlighted:hover,
 .picker--focused .picker__list-item--highlighted, .picker--time .picker__button--clear:hover,
 .picker--time .picker__button--clear:focus {
   cursor: pointer;
@@ -13,14 +14,14 @@
   background: #b1dcfb;
 }
 
-.picker-item-selected, .picker__list-item--selected,
+.picker__list-item--selected,
 .picker__list-item--selected:hover,
 .picker--focused .picker__list-item--selected {
   background: #0089ec;
   color: white;
 }
 
-.picker-item-disabled, .picker__list-item--disabled,
+.picker__list-item--disabled,
 .picker__list-item--disabled:hover,
 .picker--focused .picker__list-item--disabled {
   background: whitesmoke;
@@ -114,4 +115,64 @@
 .picker--time .picker__button--clear:hover:before,
 .picker--time .picker__button--clear:focus:before {
   color: white;
+}
+
+/* ==========================================================================
+   $CLASSIC-TIME-PICKER
+   ========================================================================== */
+.picker__list-item--highlighted {
+  border-color: #0089ec;
+}
+
+.picker__list-item:hover, .picker__list-item--highlighted:hover,
+.picker--focused .picker__list-item--highlighted, .picker--time .picker__button--clear:hover,
+.picker--time .picker__button--clear:focus {
+  cursor: pointer;
+  color: black;
+  background: #b1dcfb;
+}
+
+.picker__list-item--selected,
+.picker__list-item--selected:hover,
+.picker--focused .picker__list-item--selected {
+  background: #0089ec;
+  color: white;
+}
+
+.picker__list-item--disabled,
+.picker__list-item--disabled:hover,
+.picker--focused .picker__list-item--disabled {
+  background: whitesmoke;
+  border-color: whitesmoke;
+  color: #dddddd;
+  cursor: default;
+}
+
+/**
+ * Note: the root picker element should __NOT__ be styled
+ * more than what’s here. Style the `.picker__holder` instead.
+ */
+.picker--time {
+  min-width: 256px;
+  max-width: 320px;
+}
+
+/**
+ * The holder is the base of the picker.
+ */
+.picker--time .picker__holder {
+  background: #f2f2f2;
+}
+@media (min-height: 40.125em) {
+  .picker--time .picker__holder {
+    font-size: .875em;
+  }
+}
+
+/**
+ * The box contains the list of times.
+ */
+.picker--time .picker__box {
+  padding: 0;
+  position: relative;
 }

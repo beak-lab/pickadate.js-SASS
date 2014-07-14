@@ -3,7 +3,7 @@
    $BASE-DATE-PICKER
    ========================================================================== */
 
-@import "_variables";
+@import "variables";
 
 
 /**
@@ -123,7 +123,7 @@
 // Hovered date picker items.
 .picker__nav--prev:hover,
 .picker__nav--next:hover {
-    @extend .picker-item-hovered;
+    @extend %picker-item-hovered;
 }
 
 // Disabled month nav.
@@ -220,30 +220,30 @@
 // Hovered date picker items.
 .picker__day--infocus:hover,
 .picker__day--outfocus:hover {
-    @extend .picker-item-hovered;
+    @extend %picker-item-hovered;
 }
 
 // Highlighted and hovered/focused dates.
 .picker__day--highlighted {
-    @extend .picker-item-highlighted;
+    @extend %picker-item-highlighted;
 }
 .picker__day--highlighted:hover,
 .picker--focused .picker__day--highlighted {
-    @extend .picker-item-hovered;
+    @extend %picker-item-hovered;
 }
 
 // Selected and hovered/focused dates.
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
-    @extend .picker-item-selected;
+    @extend %picker-item-selected;
 }
 
 // Disabled dates.
 .picker__day--disabled,
 .picker__day--disabled:hover,
 .picker--focused .picker__day--disabled {
-    @extend .picker-item-disabled;
+    @extend %picker-item-disabled;
 }
 
 // Disabled and highlighted dates.
@@ -276,7 +276,7 @@
 .picker__button--today:hover,
 .picker__button--clear:hover,
 .picker__button--close:hover {
-    @extend .picker-item-hovered;
+    @extend %picker-item-hovered;
     border-bottom-color: $blue-hover;
 }
 .picker__button--today:focus,
@@ -323,7 +323,7 @@
 // Today when “disabled”.
 .picker__button--today[disabled],
 .picker__button--today[disabled]:hover {
-    @extend .picker-item-disabled;
+    @extend %picker-item-disabled;
 }
 .picker__button--today[disabled]:before {
     border-top-color: $disabled-tag;

@@ -2,28 +2,6 @@
 /*!
  * Styling for RTL (right-to-left) languages using pickadate.js
  */
-.picker-item-highlighted {
-  border-color: #0089ec;
-}
-
-.picker-item-hovered {
-  cursor: pointer;
-  color: black;
-  background: #b1dcfb;
-}
-
-.picker-item-selected {
-  background: #0089ec;
-  color: white;
-}
-
-.picker-item-disabled {
-  background: whitesmoke;
-  border-color: whitesmoke;
-  color: #dddddd;
-  cursor: default;
-}
-
 /**
  * Switch the direction - only really necessary if
  * it hasn’t already been applied higher up in the DOM.
