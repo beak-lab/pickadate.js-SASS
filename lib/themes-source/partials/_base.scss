@@ -7,7 +7,7 @@
 @import "mixins";
 
 /**
- * Note: the root picker element should *NOT* be styled more than what’s here.
+ * Note: the root picker element should *NOT* be styled more than what's here.
  */
 .picker {
 
@@ -17,11 +17,11 @@
     line-height: $base-line-height;
     color: $black;
 
-    // The picker shouldn’t affect or be affected by elements around it.
+    // The picker shouldn't affect or be affected by elements around it.
     position: absolute;
     z-index: $picker-z-index;
 
-    // The picker shouldn’t be selectable.
+    // The picker shouldn't be selectable.
     @include user-select( none );
 }
 

@@ -7,7 +7,7 @@
 @import "mixins";
 
 /**
- * Note: the root picker element should *NOT* be styled more than what’s here.
+ * Note: the root picker element should *NOT* be styled more than what's here.
  */
 .picker {}
 
@@ -66,7 +66,7 @@
     // For `small` screens...
     @media ( min-height: $breakpoint-small ) {
 
-        // Reveal what’s beyond to allow drop shadows, et al.
+        // Reveal what's beyond to allow drop shadows, et al.
         overflow: visible;
 
         // Align to the bottom edge instead of top.

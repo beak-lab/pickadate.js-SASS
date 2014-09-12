@@ -7,10 +7,10 @@
 @import "mixins";
 
 /**
- * Note: the root picker element should *NOT* be styled more than what’s here.
+ * Note: the root picker element should *NOT* be styled more than what's here.
  */
 .picker {
-    // Make it full-width so that it doesn’t collapse.
+    // Make it full-width so that it doesn't collapse.
     width: 100%;
 }
 
@@ -33,7 +33,7 @@
     // Round the bottom corners.
     @include border-radius( 0 0 $picker-border-radius $picker-border-radius );
 
-    // Let’s not go 100% + 2px.
+    // Let's not go 100% + 2px.
     @include box-sizing( border-box );
 
     // Specify the min & max widths.
@@ -66,7 +66,7 @@
 
 /**
  * The frame and wrap work together to ensure that
- * clicks within the picker don’t reach the holder.
+ * clicks within the picker don't reach the holder.
  */
 .picker__frame {
     padding: 1px;
