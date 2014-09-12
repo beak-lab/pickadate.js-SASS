@@ -1,15 +1,15 @@
-@charset "CP850";
+@charset "UTF-8";
 /* ==========================================================================
    $BASE-PICKER
    ========================================================================== */
 /**
- * Note: the root picker element should *NOT* be styled more than what’s here.
+ * Note: the root picker element should *NOT* be styled more than what's here.
  */
 .picker {
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
-  color: black;
+  color: #000;
   position: absolute;
   z-index: 10000;
   -webkit-user-select: none;
@@ -26,14 +26,14 @@
 }
 
 /**
- * When the picker is opened, the input element is “activated”.
+ * When the picker is opened, the input element is ÔÇ£activatedÔÇØ.
  */
 .picker__input.picker__input--active {
   border-color: #0089ec;
 }
 
 /**
- * The holder is the only “scrollable” top-level container element.
+ * The holder is the only ÔÇ£scrollableÔÇØ top-level container element.
  */
 .picker__holder {
   width: 100%;
@@ -46,7 +46,7 @@
  * Demo: http://amsul.github.io/pickadate.js
  */
 /**
- * Note: the root picker element should *NOT* be styled more than what’s here.
+ * Note: the root picker element should *NOT* be styled more than what's here.
  */
 .picker {
   width: 100%;
@@ -57,7 +57,7 @@
  */
 .picker__holder {
   position: absolute;
-  background: white;
+  background: #fff;
   border: 1px solid #aaaaaa;
   border-top-width: 0;
   border-bottom-width: 0;
@@ -82,7 +82,7 @@
 
 /**
  * The frame and wrap work together to ensure that
- * clicks within the picker don’t reach the holder.
+ * clicks within the picker don't reach the holder.
  */
 .picker__frame {
   padding: 1px;
@@ -111,3 +111,5 @@
   -moz-box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
 }
+
+/*# sourceMappingURL=classic.css.map */

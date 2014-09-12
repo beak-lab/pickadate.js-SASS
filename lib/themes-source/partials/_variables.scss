@@ -80,7 +80,7 @@ $breakpoint-width-tiny: 24.5em !default; // 392px @ 16px
 // The year and weekday labels.
 $year-weekday-label: #999 !default;
 
-// “Today” tag indicators.
+// "Today" tag indicators.
 $blue-tag: #0059bc !default;
 $disabled-tag: #aaa !default;
 
@@ -97,7 +97,7 @@ $disabled-highlighted-things-bg: #bbb !default;
 // Theme configurations
 //
 
-// The “default” min & max widths.
+// The "default" min & max widths.
 $picker-min-width: 256px !default;
 $picker-max-width: 666px !default;
 
@@ -105,7 +105,7 @@ $picker-max-width: 666px !default;
 $time-min-width: $picker-min-width !default;
 $time-max-width: 320px !default;
 
-// The “classic” theme settings.
+// The "classic" theme settings.
 $classic-max-width: $picker-max-width - 200px !default;
 $classic-min-width: $picker-min-width - 80px !default;
 $classic-max-height: 25em !default;

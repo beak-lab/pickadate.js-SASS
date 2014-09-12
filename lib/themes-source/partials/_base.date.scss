@@ -288,7 +288,7 @@
     outline: none;
 }
 
-// Today, clear, and close “indicators”.
+// Today, clear, and close "indicators".
 .picker__button--today:before,
 .picker__button--clear:before,
 .picker__button--close:before {
@@ -321,7 +321,7 @@
     color: $border-grey;
 }
 
-// Today when “disabled”.
+// Today when "disabled".
 .picker__button--today[disabled],
 .picker__button--today[disabled]:hover {
     @extend %picker-item-disabled;

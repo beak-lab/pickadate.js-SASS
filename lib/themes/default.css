@@ -1,15 +1,15 @@
-@charset "CP850";
+@charset "UTF-8";
 /* ==========================================================================
    $BASE-PICKER
    ========================================================================== */
 /**
- * Note: the root picker element should *NOT* be styled more than what’s here.
+ * Note: the root picker element should *NOT* be styled more than what's here.
  */
 .picker {
   font-size: 16px;
   text-align: left;
   line-height: 1.2;
-  color: black;
+  color: #000;
   position: absolute;
   z-index: 10000;
   -webkit-user-select: none;
@@ -26,14 +26,14 @@
 }
 
 /**
- * When the picker is opened, the input element is “activated”.
+ * When the picker is opened, the input element is ÔÇ£activatedÔÇØ.
  */
 .picker__input.picker__input--active {
   border-color: #0089ec;
 }
 
 /**
- * The holder is the only “scrollable” top-level container element.
+ * The holder is the only ÔÇ£scrollableÔÇØ top-level container element.
  */
 .picker__holder {
   width: 100%;
@@ -46,7 +46,7 @@
  * Demo: http://amsul.github.io/pickadate.js
  */
 /**
- * Note: the root picker element should *NOT* be styled more than what’s here.
+ * Note: the root picker element should *NOT* be styled more than what's here.
  */
 /**
  * Make the holder and frame fullscreen.
@@ -117,7 +117,7 @@
  * The box contains all the picker contents.
  */
 .picker__box {
-  background: white;
+  background: #fff;
   display: table-cell;
   vertical-align: middle;
 }
@@ -130,7 +130,7 @@
   .picker__box {
     display: block;
     font-size: 1.33em;
-    border: 1px solid #777777;
+    border: 1px solid #777;
     border-top-color: #898989;
     border-bottom-width: 0;
     -webkit-border-radius: 5px 5px 0 0;
@@ -179,3 +179,5 @@
 /**
  * For `large` screens, transform into an inline picker.
  */
+
+/*# sourceMappingURL=default.css.map */

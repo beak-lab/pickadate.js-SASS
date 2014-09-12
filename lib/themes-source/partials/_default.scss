@@ -93,7 +93,7 @@
     width: 100%;
     height: 100%;
 
-    // For `small` screens, remove the “middle-aligned” styling
+    // For `small` screens, remove the "middle-aligned" styling
     @media ( min-height: $breakpoint-small ) {
         display: block;
     }
@@ -119,7 +119,7 @@
     // For `small` screens...
     @media ( min-height: $breakpoint-small ) {
 
-        // Remove the “middle-aligned” styling
+        // Remove the "middle-aligned" styling
         display: block;
 
         // Increase the font size a bit more
