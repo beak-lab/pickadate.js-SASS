@@ -1,14 +1,14 @@
 
-/* ==========================================================================
-   $BASE-TIME-PICKER
-   ========================================================================== */
+ // ==========================================================================
+ //   $BASE-TIME-PICKER
+ // ==========================================================================
 
 @import "variables";
 @import "mixins";
 
-/**
- * The list of times.
- */
+//
+// The list of times.
+//
 .picker__list {
     list-style: none;
     padding: 0.75em 0 4.2em;
@@ -16,9 +16,9 @@
 }
 
 
-/**
- * The times on the clock.
- */
+//
+// The times on the clock.
+//
 .picker__list-item {
     border-bottom: 1px solid $border-grey-light;
     border-top: 1px solid $border-grey-light;
@@ -33,14 +33,14 @@
     }
 }
 
-/* Hovered time */
+ // Hovered time//
 .picker__list-item:hover {
     @extend %picker-item-hovered;
     border-color: $blue;
     z-index: 10;
 }
 
-/* Highlighted and hovered/focused time */
+//Highlighted and hovered/focused time//
 .picker__list-item--highlighted {
     @extend %picker-item-highlighted;
     z-index: 10;
@@ -50,7 +50,7 @@
     @extend %picker-item-hovered;
 }
 
-/* Selected and hovered/focused time */
+//Selected and hovered/focused time//
 .picker__list-item--selected,
 .picker__list-item--selected:hover,
 .picker--focused .picker__list-item--selected {
@@ -58,7 +58,7 @@
     z-index: 10;
 }
 
-/* Disabled time */
+//Disabled time//
 .picker__list-item--disabled,
 .picker__list-item--disabled:hover,
 .picker--focused .picker__list-item--disabled {
@@ -70,9 +70,9 @@
 
 
 
-/**
- * The clear button
- */
+//
+// The clear button
+//
 .picker--time {
 
     .picker__button--clear {

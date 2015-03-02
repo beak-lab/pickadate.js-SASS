@@ -1,14 +1,14 @@
 
-/* ==========================================================================
-   $BASE-PICKER
-   ========================================================================== */
+// ==========================================================================
+// $BASE-PICKER
+// ==========================================================================
 
 @import "variables";
 @import "mixins";
 
-/**
- * Note: the root picker element should *NOT* be styled more than what's here.
- */
+//
+// Note: the root picker element should *NOT* be styled more than what's here.
+// 
 .picker {
 
     // The base font stylings.
@@ -26,25 +26,25 @@
 }
 
 
-/**
- * The picker input element.
- */
+//
+// The picker input element.
+// 
 .picker__input {
     cursor: default;
 }
 
 
-/**
- * When the picker is opened, the input element is “activated”.
- */
+//
+// When the picker is opened, the input element is “activated”.
+// 
 .picker__input.picker__input--active {
     border-color: $input-active-border;
 }
 
 
-/**
- * The holder is the only “scrollable” top-level container element.
- */
+//
+// The holder is the only “scrollable” top-level container element.
+// 
 .picker__holder {
     width: 100%;
     overflow-y: auto;

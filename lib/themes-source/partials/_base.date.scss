@@ -1,23 +1,23 @@
 
-/* ==========================================================================
-   $BASE-DATE-PICKER
-   ========================================================================== */
+// ==========================================================================
+// $BASE-DATE-PICKER
+// ==========================================================================
 
 @import "variables";
 @import "mixins";
 
 
-/**
- * The picker box.
- */
+// 
+// The picker box.
+// 
 .picker__box {
     padding: 0 1em;
 }
 
 
-/**
- * The header containing the month and year stuff.
- */
+// 
+// The header containing the month and year stuff.
+// 
 .picker__header {
     text-align: center;
     position: relative;
@@ -25,9 +25,9 @@
 }
 
 
-/**
- * The month and year labels.
- */
+// 
+// The month and year labels.
+// 
 .picker__month,
 .picker__year {
     font-weight: 500;
@@ -42,9 +42,9 @@
 }
 
 
-/**
- * The month and year selectors.
- */
+// 
+// The month and year selectors.
+// 
 .picker__select--month,
 .picker__select--year {
     border: 1px solid $border-select;
@@ -70,9 +70,9 @@
 }
 
 
-/**
- * The month navigation buttons.
- */
+// 
+// The month navigation buttons.
+// 
 .picker__nav--prev,
 .picker__nav--next {
     position: absolute;
@@ -141,9 +141,9 @@
 
 
 
-/**
- * The calendar table of dates
- */
+// 
+// The calendar table of dates
+// 
 .picker__table {
     text-align: center;
     border-collapse: collapse;
@@ -167,9 +167,9 @@
 }
 
 
-/**
- * The weekday labels
- */
+// 
+// The weekday labels
+// 
 .picker__weekday {
     width: 14.285714286%; // 100/7
     font-size: .75em;
@@ -177,16 +177,16 @@
     color: $year-weekday-label;
     font-weight: 500;
 
-    /* Increase the spacing a tad */
+    // Increase the spacing a tad// 
     @media ( min-height: $breakpoint-small ) {
         padding-bottom: .5em;
     }
 }
 
 
-/**
- * The days on the calendar
- */
+// 
+// The days on the calendar
+// 
 .picker__day {
     padding: .3125em 0;
     font-weight: 200;
@@ -254,9 +254,9 @@
 }
 
 
-/**
- * The footer containing the "today", "clear", and "close" buttons.
- */
+// 
+// The footer containing the "today", "clear", and "close" buttons.
+// 
 .picker__footer {
     text-align: center;
 }

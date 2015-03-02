@@ -1,14 +1,14 @@
 
-/* ==========================================================================
-   $DEFAULT-TIME-PICKER
-   ========================================================================== */
+// ==========================================================================
+//    $DEFAULT-TIME-PICKER
+// ==========================================================================
 
 @import "variables";
 @import "mixins";
 
-/**
- * The frame the bounds the time picker.
- */
+// 
+//  The frame the bounds the time picker.
+ 
 .picker--time .picker__frame {
 
     // Adjust the min & max widths.
@@ -17,9 +17,9 @@
 }
 
 
-/**
- * The picker box.
- */
+// 
+//   The picker box.
+ 
 .picker--time .picker__box {
 
     // Keep the font-size small to show more in view.

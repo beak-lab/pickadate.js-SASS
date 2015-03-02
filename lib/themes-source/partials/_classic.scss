@@ -1,14 +1,14 @@
-/*!
- * Classic picker styling for pickadate.js
- * Demo: http://amsul.github.io/pickadate.js
- */
+// !
+// // Classic picker styling for pickadate.js
+// // Demo: http://amsul.github.io/pickadate.js
+ 
 
 @import "variables";
 @import "mixins";
 
-/**
- * Note: the root picker element should *NOT* be styled more than what's here.
- */
+// 
+// Note: the root picker element should//NOT* be styled more than what's here.
+//
 .picker {
     // Make it full-width so that it doesn't collapse.
     width: 100%;
@@ -16,9 +16,9 @@
 
 
 
-/**
- * The holder is the base of the picker.
- */
+// 
+// The holder is the base of the picker.
+//
 .picker__holder {
 
     // The base stylings.
@@ -64,10 +64,10 @@
 
 
 
-/**
- * The frame and wrap work together to ensure that
- * clicks within the picker don't reach the holder.
- */
+// 
+// The frame and wrap work together to ensure that
+// clicks within the picker don't reach the holder.
+//
 .picker__frame {
     padding: 1px;
 }
@@ -77,9 +77,9 @@
 
 
 
-/**
- * When the picker opens...
- */
+// 
+// When the picker opens...
+//
 .picker--opened {
 
     .picker__holder {

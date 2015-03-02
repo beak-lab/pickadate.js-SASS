@@ -1,20 +1,20 @@
-/*!
- * Default mobile-first, responsive styling for pickadate.js
- * Demo: http://amsul.github.io/pickadate.js
- */
+// !
+// // Default mobile-first, responsive styling for pickadate.js
+// // Demo: http://amsul.github.io/pickadate.js
+ 
 
 @import "variables";
 @import "mixins";
 
-/**
- * Note: the root picker element should *NOT* be styled more than what's here.
- */
+// 
+//   Note: the root picker element should *NOT* be styled more than what's here.
+ 
 .picker {}
 
 
-/**
- * Make the holder and frame fullscreen.
- */
+// 
+// Make the holder and frame fullscreen.
+ 
 .picker__holder,
 .picker__frame {
     bottom: 0;
@@ -26,9 +26,9 @@
 }
 
 
-/**
- * The holder should overlay the entire screen.
- */
+// 
+//  The holder should overlay the entire screen.
+
 .picker__holder {
 
     // Fill the screen and fix the position.
@@ -44,9 +44,9 @@
 
 
 
-/**
- * The frame that bounds the box contents of the picker.
- */
+// 
+// The frame that bounds the box contents of the picker.
+
 .picker__frame {
 
     position: absolute;
@@ -85,9 +85,9 @@
     }
 }
 
-/**
- * The wrapper sets the stage to vertically align the box contents.
- */
+//
+// The wrapper sets the stage to vertically align the box contents.
+// 
 .picker__wrap {
     display: table;
     width: 100%;
@@ -101,9 +101,9 @@
 
 
 
-/**
- * The box contains all the picker contents.
- */
+//
+// The box contains all the picker contents.
+// 
 .picker__box {
     background: $bg-white;
 
@@ -150,9 +150,9 @@
 }
 
 
-/**
- * When the picker opens...
- */
+//
+// When the picker opens...
+// 
 .picker--opened {
 
     // Immediately move the holder to the top edge then fade in an overlay
@@ -195,9 +195,9 @@
 
 
 
-/**
- * For `large` screens, transform into an inline picker.
- */
+//
+// For `large` screens, transform into an inline picker.
+// 
 // @include min-screen( large ) {
 
 //     .picker {
